@@ -2,15 +2,8 @@
 " => General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible              " required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+set nocompatible
+filetype off                  
 
 " Enable folding
 set foldmethod=indent
@@ -30,7 +23,7 @@ map <leader>n :bn<cr>
 map <leader>p :bp<cr>
 map <leader>k :bp<bar>sp<bar>bn<bar>bd<CR>
 
-" Hidden buffer option to allow for buffer switching without saving
+" Hidden buffer allows  buffer switching without saving
 set hidden
 
 " Save session maped to F2 and load session to F3 
@@ -70,7 +63,7 @@ set noswapfile
 autocmd BufNewFile,BufRead *.py set ft=python
 
 
-" PEP8 indentation 
+" Python indentation 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -79,11 +72,6 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix |
-
-au BufNewFile,BufRead *.js,*.html,*.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
 
 
 " Flagging unnecessary whitespace
@@ -108,7 +96,18 @@ let python_highlight_all=1
 syntax on
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Web Development Config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Web Development Indentation
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Color Overrides
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
