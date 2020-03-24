@@ -105,4 +105,4 @@ au BufNewFile,BufRead *.js,*.html,*.css
 " Highlight Groups
 highlight Constant ctermfg=64
 highlight Statement gui=bold guifg=#d33682 ctermfg=125 cterm=bold
-highlight Normal ctermfg=grey ctermbg=DarkGrey
+highlight Normal ctermfg=grey ctermbg=black
