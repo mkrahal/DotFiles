@@ -58,7 +58,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[1;36m\]\t \[\e[1;35m\]\u\[\e[1;36m\]@\[\e[1;35m\]\h:\W\$\[\e[0;36m\] '
+    PS1='\[\e[1;36m\]\t \[\e[1;35m\]\u\[\e[1;36m\]@\[\e[1;35m\]\h:\W\$\[\e[0;36m\] \n'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -196,5 +196,5 @@ export SCM_CHECK=true
 # export BASH_IT_RELOAD_LEGACY=1
 
 # Load Bash It
-source "$BASH_IT"/bash_it.sh
-eval `dircolors /home/mkr/.dir_colors/dircolors`
+#source "$BASH_IT"/bash_it.sh
+#eval `dircolors /home/mkr/.dir_colors/dircolors`
